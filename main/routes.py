@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import tornado.web
 from login.urls import routes as login_routes
 from home.urls import routes as home_routes
 
