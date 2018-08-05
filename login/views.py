@@ -6,4 +6,8 @@ from main.base import BaseHandler
 
 class LoginIndex(BaseHandler):
   def get(self):
-    return self.render('login/index.html',)
+    locals = {
+      'constants': constants,
+      'title': 'Bienvenido',
+    }
+    return self.render('login/index.html', locals= locals)
