@@ -6,4 +6,4 @@ from main.base import BaseHandler
 
 class LoginIndex(BaseHandler):
   def get(self):
-    return self.write('login')
+    return self.render('login/index.html',)
