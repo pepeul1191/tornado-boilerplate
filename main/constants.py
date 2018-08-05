@@ -1,11 +1,23 @@
 constants = {
-  'BASE_URL' : 'http://localhost:8888/',
-  'STATICS_URL' : 'http://localhost:8888/static/',
-  'CSRF' : 'mpt/sr6eS2AlCRHU7DVThMgFTN08pnfSDf/C94eZx7udfm0lvgaYWLYJttYPKzGKDTlXwVU/d2FOxbKkgNlsTw==',
-  'ambiente' : 'desarrollo',
+  'base_url' : 'http://localhost:8888/',
+  'static_url' : 'http://localhost:8888/static/',
+  'sistema_id': '3',
+  'csrf' : {
+    'key': 'csrfmiddlewaretoken',
+    'secret': 'holamundojejejojo18927389127389123'
+  },
+  'ambiente_static' : 'desarrollo',
+  'ambiente_session' : 'inactivo',
+  'ambiente_csrf' : 'inactivo',
+  'ambiente_500' : 'activo',
+  'ambiente_error_handler' : 'inactivo',
   'key' : 'Fdp6CVxpri1ga8kH',
   'servicios' : {
-    'accesos' : 'http://localhost:5000/',
+    'accesos' : {
+      'url': 'http://localhost:4000/',
+      'key': 'csrf_val',
+      'secret': 'PKBcauXg6sTXz7Ddlty0nejVgoUodXL89KNxcrfwkEme0Huqtj6jjt4fP7v2uF4L',
+    },
     'agricultores' : 'http://localhost:3012/',
     'ubicaciones' : 'http://localhost:3011/',
     'archivos' : 'http://192.168.1.51:3031/',
