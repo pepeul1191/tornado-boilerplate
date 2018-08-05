@@ -1,4 +1,4 @@
-## Python3 Tornado
+## Python3 Tornado Boilerplate
 
 Requisitos de software previamente instalado:
 
@@ -19,6 +19,11 @@ Arrancar servidor Torando
     $ cd <<carpeta-proyecto>>
     $ pip install -r requirements.txt
     $ python app.py
+
+Migraciones con DBMATE:
+
+    $ dbmate -d "db/migrations" -e "DATABASE_URL" new <<nombre_de_migracion>>
+    $ dbmate -d "db/migrations" up
 
 ### Fuentes:
 
