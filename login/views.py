@@ -2,10 +2,12 @@
 # -*- coding: utf-8 -*-
 import tornado.web
 from main.constants import constants
+from main.middlewares import session_false
 from main.base import BaseHandler
 from .helpers import index_css, index_js
 
 class LoginIndex(BaseHandler):
+  @session_false
   def get(self):
     locals = {
       'title': 'Bienvenido',
