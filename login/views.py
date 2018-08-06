@@ -8,8 +8,9 @@ from .helpers import index_css, index_js
 class LoginIndex(BaseHandler):
   def get(self):
     locals = {
-      'constants': constants,
       'title': 'Bienvenido',
+      'mensaje': '',
+      'constants': constants,
       'csss': index_css(),
       'jss': index_js(),
     }

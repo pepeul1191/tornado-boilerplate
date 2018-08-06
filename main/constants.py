@@ -3,7 +3,7 @@ constants = {
   'static_url' : 'http://localhost:8888/static/',
   'sistema_id': '3',
   'csrf' : {
-    'key': 'csrfmiddlewaretoken',
+    'key': 'csrftoken',
     'secret': 'holamundojejejojo18927389127389123'
   },
   'ambiente_static' : 'desarrollo',
