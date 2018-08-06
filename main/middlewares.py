@@ -72,12 +72,8 @@ def session_true(fn):
   def _session_true(self, *args, **kwargs):
     #si la session es activaa, vamos a '/accesos/'
     if constants['ambiente_session'] == 'activo':
-      s = self.get_secure_cookie('estado')
-      if s != None:
-        if s.has_key('activo') == True:
-          if s['activo'] == False:
-            return self.redirect('/error/access/505')
-        else:
+      if self.get_secure_cookie('estado') != None:
+        if self.get_secure_cookie('estado') != b'activo':
           return self.redirect('/error/access/505')
       else:
         return self.redirect('/error/access/505')
