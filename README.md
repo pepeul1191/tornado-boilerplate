@@ -33,6 +33,7 @@ Migraciones con DBMATE:
 + https://stackoverflow.com/questions/47010763/tornado-asynchronous-actions-in-custom-decorator
 + http://www.tornadoweb.org/en/stable/guide/templates.html?highlight=ui_methods#template-syntax
 + https://stackoverflow.com/questions/12993835/passing-a-custom-python-function-into-a-tornado-template
++ https://stackoverflow.com/questions/10726486/tornado-url-query-parameters
 
 Thanks/Credits
 

@@ -4,5 +4,5 @@ import tornado.web
 from .views import Error404
 
 routes = [
-  (r'/error/access/404', Error404),
+  (r'/error/access/([0-9]+)', Error404),
 ]
