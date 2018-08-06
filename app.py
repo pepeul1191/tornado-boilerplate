@@ -5,9 +5,10 @@ import tornado.web
 import tornado.httpserver
 from main.settings import settings
 from main.routes import routes
+from error.views import ErrorRedirect404
 
 def main():
-  application = tornado.web.Application(routes, **settings)
+  application = tornado.web.Application(routes, **settings, default_handler_class = ErrorRedirect404)
   http_server = tornado.httpserver.HTTPServer(application)
   #options.port  = int(raw_input('Ingrese el puerto:'))
   #http_server.listen(options.port)
