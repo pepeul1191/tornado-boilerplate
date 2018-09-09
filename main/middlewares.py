@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import bottle
 import json
-from bottle import response, redirect, request, HTTPResponse
 from .constants import constants
 
 def headers(fn):
