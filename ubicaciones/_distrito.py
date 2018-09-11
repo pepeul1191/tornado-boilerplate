@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import requests
 import datetime
 import json
 import tornado.web
